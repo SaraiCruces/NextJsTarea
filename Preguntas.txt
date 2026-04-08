@@ -45,34 +45,47 @@ Imagen Mobile: Se muestra en pantallas pequeñas (block) y se oculta a partir de
 Funcionamiento: Implementa un diseño responsivo que carga una versión diferente de la imagen según el dispositivo.
 
 12 ¿Como funciona el enrutamiento en Next JS  ? 
-Utiliza el File System Routing. Cada carpeta dentro de app que contenga un archivo page.tsx se convierte automáticamente en una ruta.
+Utiliza el File System Routing. Cada carpeta dentro de app que contenga un archivo page.tsx se convierte automáticamente
+ en una ruta.
 
 13 ¿Que es una ruta en el contexto web y donde las hemos visto en la clase ? 
 Es la dirección o URL (como /perfil). En clase se ven al navegar entre las secciones del dashboard.
 
 14 ¿Que arrojo a MiduDev el localhost:300/dashboard, donde hemos visto esos errores en la clase ? 
-
+Un error 404. Cuando la carpeta no existe o hay un error en el codigo.
 
 15 ¿Que arrojo a MiduDev el localhost:300/dashboard, donde hemos visto esos errores en la clase ? 
 
 16 ¿Que  es el File System Routing?
+Es el sistema donde la estructura de carpetas de tu proyecto define las rutas de tu sitio
 
 17 ¿Como funcionan las rutas anidadas?
+Se crean poniendo carpetas dentro de otras carpetas
 
 18 ¿Investiga por que es necesario esto ?
+Es necesario para que Next.js reconozca el componente como el punto de entrada principal de ese archivo y pueda renderizarlo.
 
 19 ¿Para que sirve el componente Link?
+Sirve para navegar entre páginas de forma rápida (Client-side navigation) sin recargar toda la pestaña del navegador.
 
 20 ¿Que se carga cuando usamos <a> y que cuando se usa <link> ?
+<a>: Realiza una carga completa de la página (refresca el navegador).
+
+<Link>: Solo descarga el contenido necesario de la nueva ruta (Single Page Application feel).
 
 21 ¿Investiga que es un Hook?
+Es una función especial de React que te permite "engancharte" a características del estado y el ciclo de vida.
 
 22 ¿Que hooks usa Midu?
+Suele usar usePathname y useRouter
 
 23 ¿Por que ocurre el siguiente error?
+Por que se esta intentando usar un Hook en un server Component y los Hook solo funcionan en el cliente
 
 24 ¿Es posible ejecutar los componentes de react en el cliente y el servidor?
-
-25 ¿Es posible ejecutar los componentes de react en el cliente y el servidor?
+Sí. Por defecto son Server Components, pero puedes usar 'use client' para que se ejecuten en el navegador cuando necesites 
+interactividad.
 
 25 ¿Que es el code splitting?
+Es una técnica que divide el código de la aplicación en paquetes pequeños. Next.js lo hace automáticamente por cada ruta, cargando
+ solo el JavaScript necesario para la página que el usuario está viendo.

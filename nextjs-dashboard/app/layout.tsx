@@ -7,11 +7,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <h1>Holap</h1>
-        <div style={{border: '1px solid #000'}}>
+      <body className={'${montserrat.className }antialiased'}>
+        Esto es parte del Layout
         {children}
-        </div>
+        <footer className='py-10 flex justify-center items-center'>
+          Hecho con ❤️ por mi
+        </footer>
         </body>
     </html>
   );
