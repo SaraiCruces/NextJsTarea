@@ -1,31 +1,57 @@
-1¿Qué es Next.js y por qué se dice que es el framework de React más popular? 
-
+1 ¿Qué es Next.js y por qué se dice que es el framework de React más popular? 
+Es un framework de React que permite crear aplicaciones web rápidas mediante el renderizado en el servidor (SSR) 
+y la generación de sitios estáticos (SSG). Es el más popular porque soluciona problemas de React "puro" como el 
+SEO, la optimización de imágenes y el enrutamiento automático.
 
 2 ¿Cuál es el comando exacto con npx para inicializar un proyecto de Next.js asegurando usar la última versión?
+npx create-next-app@latest
 
 3 ¿Cuál es el comando utilizado para levantar el entorno de desarrollo y en qué puerto se ejecuta por defecto? 
+Se levanta con npm run dev y se ejecuta por defecto en el puerto 3000.
 
 4 ¿Qué función cumple el comando npm run build en un proyecto de Next.js? 
+Compila la aplicación para producción. Optimiza el código, genera las páginas estáticas 
+y prepara todo para que el sitio sea lo más rápido posible al desplegarse.
 
 5 Describe para que sirven las carpetas, public y app
+public: Contiene archivos estáticos (imágenes, fuentes, favicons) accesibles directamente por la URL.
+
+app: Es donde reside el App Router. Aquí se definen las rutas, componentes, layouts y estilos de la aplicación.
 
 6 ¿Que es un CCS MODULE y como se usan? 
+Es un archivo CSS donde todos los nombres de clases tienen un ámbito local por defecto. Se usan creando
+ archivos .module.css e importándolos como un objeto en el componente: import styles from './Home.module.css'.
 
 7 ¿Que hace el componente  Layout.tsx ? 
+Es un componente que envuelve a las páginas. Sirve para mantener elementos compartidos (como el Navbar o Footer) 
+sin que se vuelvan a renderizar al navegar entre rutas.
 
 8 ¿Que es el enrutamiento ?
+Es el proceso de definir cómo responde la aplicación a una URL específica
 
 9 ¿Cual es la diferencia entre Image e img?
+El componente <Image /> de Next.js optimiza automáticamente el tamaño, el formato (WebP) y la prioridad, mientras
+que <img> es la etiqueta HTML estándar sin optimizaciones.
 
 10 ¿Que es el Lazy Load?
+Es una técnica que retrasa la carga de recursos (como imágenes) hasta que son necesarios (cuando entran en el área 
+visible del navegador).
 
 11 Cual es el funcionamiento del siguiente codigo, en que momento se muestra cada imagen
+Imagen Desktop: Se muestra solo en pantallas medianas o grandes (md:block) y se oculta en móviles (hidden).
+
+Imagen Mobile: Se muestra en pantallas pequeñas (block) y se oculta a partir del punto de interrupción mediano (md:hidden).
+
+Funcionamiento: Implementa un diseño responsivo que carga una versión diferente de la imagen según el dispositivo.
 
 12 ¿Como funciona el enrutamiento en Next JS  ? 
+Utiliza el File System Routing. Cada carpeta dentro de app que contenga un archivo page.tsx se convierte automáticamente en una ruta.
 
 13 ¿Que es una ruta en el contexto web y donde las hemos visto en la clase ? 
+Es la dirección o URL (como /perfil). En clase se ven al navegar entre las secciones del dashboard.
 
 14 ¿Que arrojo a MiduDev el localhost:300/dashboard, donde hemos visto esos errores en la clase ? 
+
 
 15 ¿Que arrojo a MiduDev el localhost:300/dashboard, donde hemos visto esos errores en la clase ? 
 
